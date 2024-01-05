@@ -258,15 +258,28 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     margin-right: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .list-description{
     display: flex;
-        max-width: 264px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0px 0px 4px 4px;
-        background: #fff;
-        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    max-width: 264px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 4px 4px;
+    background: #fff;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+@media only screen and (min-width: 768px){
+ .list-description {
+    width: calc((100% - 1 * 24px) / 2);
+}
+}
+
+@media only screen and (min-width: 1158px) {
+    .list-description {
+        width: calc((100% - 3 * 24px) / 4);
+    }
 }
 
 .btn{
@@ -369,6 +382,15 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     flex-direction: column;
     gap: 72px;
     align-items: center;
+}
+
+@media only screen and (min-width: 768px){ 
+    .subtitle-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 64px 24px;
+        justify-content: center;
+}
 }
 
 .employees {
